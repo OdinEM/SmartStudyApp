@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="../CSS/english.css">
 </head>
 <body>
+<div class="back-button-container">
+    <button onclick="goBack()">Back to Dashboard</button>
+</div>
+
 <div class="course-heading">
   <h1>English Courses</h1>
 </div>
@@ -57,5 +61,10 @@
     </ul>
   </div>
 </div>
+<script>
+  function goBack() {
+      window.history.back();
+  }
+  </script>  
 </body>
 </html>
