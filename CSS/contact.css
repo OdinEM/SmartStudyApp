@@ -81,7 +81,33 @@ input[type="submit"]:hover {
 .required {
   color: red;}
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 620px) {
    
+    .contact-details {
+      display: block;
+    }
     
+    .left-side{
+      text-align: center;
+      margin-top: 6%;
+      width: 100%;
+      padding: 3%;
+    }
+    
+    .left-side img{
+      margin: 2%;
+      width: 8%;
+      height: auto;
+    }
+    
+    .item {
+     display: flex;
+     justify-content: ;
+    }
+    
+    .form-box {
+       background-color: white;
+      padding: 2%;
+      width: 100%;
+    }
 }
