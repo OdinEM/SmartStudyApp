@@ -8,8 +8,11 @@
 body{
     font-family: "DM Sans", sans-serif;
     list-style: none;
+<<<<<<< HEAD
+=======
     width: 100%;
     
+>>>>>>> f4f7d117524c3f34597a38f60ca44478f2338836
 }
 
 /* Header */
@@ -23,7 +26,10 @@ header{
     padding: 1rem;
     padding-left: 4rem;
     padding-right: 4rem;
+<<<<<<< HEAD
+=======
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+>>>>>>> f4f7d117524c3f34597a38f60ca44478f2338836
 }
 
 .logo{
@@ -38,9 +44,12 @@ nav{
 
 nav a{
     margin-left: 30px;
+<<<<<<< HEAD
+=======
     transition: 0.3s ease;
     font-weight: 600;
 
+>>>>>>> f4f7d117524c3f34597a38f60ca44478f2338836
 }
 
 nav a:hover{
@@ -65,12 +74,15 @@ a{
     border: 2px solid white;
     border-radius: 1rem;
     font-size: 18px;
+<<<<<<< HEAD
+=======
     transition: 0.3s ease;
 }
 
 .login:hover{
     border: 2px solid #F0F41D;
     color: #F0F41D;
+>>>>>>> f4f7d117524c3f34597a38f60ca44478f2338836
 }
 
 .signup{
@@ -79,11 +91,16 @@ a{
     color: #3A80D4;
     border-radius: 1rem;
     font-size: 18px;
+<<<<<<< HEAD
+=======
     transition: 0.3s ease;
+>>>>>>> f4f7d117524c3f34597a38f60ca44478f2338836
 }
 
 .signup:hover{
     background-color: #F0F41D;
+<<<<<<< HEAD
+=======
 }
 
 /* Hero section */
@@ -237,4 +254,5 @@ a{
     width:1px;
     height: 80px;
     background-color: black;
+>>>>>>> f4f7d117524c3f34597a38f60ca44478f2338836
 }
