@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color:rgb(62, 62, 214);
+  background-color: #0052B4;
 }
 
 .login-container {
@@ -38,8 +38,8 @@ input {
 }
 
 input[type="submit"] {
-  background-color:rgb(232, 232, 15);
-  color: rgb(62, 62, 214);
+  background-color:#FFDF00;
+  color:  #0052B4;
   cursor: pointer;
 }
 
@@ -47,13 +47,15 @@ input[type="submit"]:hover {
   background-color:yellowF0F41D;
 }
 h6 {
-  color: white; /* White color for the h6 text */
+  color: white; 
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 a {
-  color: yellow; /* Yellow color for the anchor tag */
+  color: #FFDF00;
   text-decoration: none;
 }
 h1, form {
-color: white; /* White color for h1 and form */
+color: white;
 }
