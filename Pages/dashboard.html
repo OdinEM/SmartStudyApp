@@ -17,42 +17,60 @@
     <div class="container">
       <div class="sidebar">
         <div class="logo items">
-          <img src="../images/smartstudy-high-resolution-logo (1).png" alt="">
-                <!-- <span class="mainHead para">
+          <img src="../images/smartstudy-high-resolution-logo (1).png" alt="" />
+          <!-- <span class="mainHead para">
                     <h5>SMART</h5>
                     <h5>STUDY</h5>
                 </span> -->
         </div>
 
-        <li class="items">
-          <i class="fa-solid fa-house"></i>
-          <p class="para">Home</p>
-        </li>
-        <li class="items">
-          <i class="fa-solid fa-user"></i>
-          <p class="para">Students</p>
-        </li>
-        <li class="items">
-          <i class="fa-solid fa-circle-exclamation"></i>
-          <p class="para">Courses</p>
-        </li>
-        <li class="items">
-          <i class="fa-solid fa-envelope"></i>
-          <p class="para">Resources</p>
-        </li>
-        <li class="items">
-          <i class="fa-solid fa-user-plus"></i>
-          <p class="para">Statistics</p>
-        </li>
-        <li class="items">
-          <i class="fa-solid fa-calendar-days"></i>
-          <p class="para">Settings</p>
-        </li>
-        <li class="items">
-          <i class="fa-solid fa-gear"></i>
-          <p class="para">Staff Room</p>
-        </li>
+        <a href="/Pages/dashboard.html" class="students">
+          <li class="items">
+            <i class="fa-solid fa-house"></i>
+            <p class="para">Home</p>
+          </li>
+        </a>
+        <a href="/Pages/dashboard_student.html" class="students">
+          <li class="items">
+            <i class="fa-solid fa-user"></i>
+            <p class="para">Students</p>
+          </li>
+        </a>
 
+        <a href="/Pages/dashboard_courses.html" class="students">
+          <li class="items">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p class="para">Courses</p>
+          </li>
+        </a>
+
+        <a href="/Pages/dashboard_resources.html" class="students">
+          <li class="items">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="para">Resources</p>
+          </li>
+        </a>
+
+        <a href="/Pages/dashbaord_statistics.html" class="students">
+          <li class="items">
+            <i class="fa-solid fa-user-plus"></i>
+            <p class="para">Statistics</p>
+          </li>
+        </a>
+
+        <a href="/Pages/dashboard_setting.html" class="students">
+          <li class="items">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p class="para">Settings</p>
+          </li>
+        </a>
+
+        <a href="/Pages/dashboard_staffroom.html" class="students">
+          <li class="items">
+            <i class="fa-solid fa-gear"></i>
+            <p class="para">Staff Room</p>
+          </li>
+        </a>
         <li class="items logout-btn">
           <i class="fa-solid fa-right-from-bracket"></i>
           <p class="para">Sign Out</p>
@@ -62,9 +80,144 @@
       <div class="toggler">
         <i class="fa-solid fa-bars" id="toggle-bars"></i>
         <i class="fa-solid fa-xmark" id="toggle-cross"></i>
+
+        <div id="search_bar">
+          <div class="left-end">
+            <input
+              type="text"
+              class="inputsearchbar"
+              placeholder="Search Class, Document,Activities,..."
+            />
+          </div>
+          <div class="right-end">
+            <i class="fas fa-sun" style="color: #0052B4;"></i>
+            <i class="fas fa-moon" style="color: #0052B4;"></i>
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-cog"></i>
+            <img class="profile" src="/images/profilepicture.webp" alt="" />
+          </div>
+        </div>
+
+        <div id="welcome_section">
+          <div>
+            <h5 id="welcome_section_title">Welcome Back, Emmanuel Oden</h5>
+            <p id="welcome_section_p">
+              You have 27 new student added to your course. Please review and
+              see the new students
+            </p>
+          </div>
+
+          <img
+            class="teacher_and_student"
+            src="/images/Teacher and student.png"
+          />
+        </div>
+        <!-- Students and Statistics -->
+        <div class="container_statistics">
+          <div class="box">
+            <div class="percent">
+              <span>100%</span>
+              <span>75%</span>
+              <span>50%</span>
+              <span>25%</span>
+              <span>0%</span>
+          </div>
+          <div class="options">
+              <span class="option">Class A</span>
+              <span class="option">Class B</span>
+              <span class="option">Class C</span>
+              <span class="option">Class D</span>
+          </div>
+          </div>
+
+
+        <div class="box_class_progress">
+          <h3>Class Progress</h3>
+
+          <div class="class_progress_section">
+            <div class="class_progress_section_title">
+              <h4>Class A</h4>
+              <p>78 Registered</p>
+            </div>
+            <div class="ui-widgets">
+              <div class="ui-values">50%</div>
+            </div>
+          </div>
+
+          <div class="class_progress_section">
+            <div class="class_progress_section_title">
+              <h6>Class B</h6>
+              <p>60 Registered</p>
+            </div>
+            <div class="ui-widgets">
+              <div class="ui-values">43%</div>
+            </div>
+          </div>
+
+
+          <div class="class_progress_section">
+            <div class="class_progress_section_title">
+              <h6>Class C</h6>
+              <p>80 Registered</p>
+            </div>
+            <div class="ui-widgets">
+              <div class="ui-values">67%</div>
+            </div>
+          </div>
+
+       
+          <div class="class_progress_section">
+            <div class="class_progress_section_title">
+              <h6>Class D</h6>
+              <p>104 Registered</p>
+            </div>
+            <div class="ui-widgets">
+              <div class="ui-values">56%</div>
+            </div>
+          </div>
+
+          </div>
+
+          <div class="box_class_progress">
+            <h3>Upcoming activities</h3>
+            <p>see all</p>
+
+            <div class="activity-box">
+              <h2>Meeting 1</h2>
+              <div class="activity-details">
+                  <p><strong>Google Meet Link:</strong></p>
+                  <a href="https://meet.google.com/your-meet-link">https://meet.google.com/your-meet-link</a>
+              </div>
+          </div>
+      
+          <div class="activity-box">
+              <h2>Meeting 2</h2>
+              <div class="activity-details">
+                  <p><strong>Google Meet Link:</strong></p>
+                  <a href="https://meet.google.com/your-meet-link">https://meet.google.com/your-meet-link</a>
+              </div>
+          </div>
+      
+       
+      
+         
+          </div>
+
+        </div>
+
+
       </div>
+     
+     
+     
+     
+      <!-- </div>
+          </div>
+       
+      </div> -->
     </div>
 
     <script src="../Javascript/dashboard.js"></script>
   </body>
+  
 </html>
