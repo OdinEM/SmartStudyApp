@@ -3,20 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login-page</title>
-  <link rel="stylesheet" href="/CSS/login.css">
+  <link rel="stylesheet" href="../CSS/login.css">
+  <title>Login Page</title>
 </head>
 <body>
-  <section id="login-section">
-      <div id="hello">
-        <h1>HELLO! WELCOME BACK</h1>
-      </div>
-      <div id="login">
-        <label>Email</label>
-        <input type="text">
-        <label>Password</label>
-        <input type="password">
-      </div>
-  </section>
+
+<div class="background-image">
+    <img src="img/login background.jpg" alt="">
+</div>
+<div class="login-container">
+  <form action="#" method="post">
+    <h2>HELLO! WELCOME BACK</h2>
+    <label for="username">Email</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <input type="submit" value="Login">
+  </form>
+  <h6>You do not have an account? <a href="./signup.html">SignUp</a></h6>
+</div>
+
 </body>
 </html>
