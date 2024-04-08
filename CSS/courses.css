@@ -1,0 +1,53 @@
+body {
+    background-color: #F0F7FF; /* Set background color for the entire page */
+    color: #fff; /* Set text color to white */
+  }
+  
+  .course-heading {
+    background-color: #0052B4; /* Background color for the heading */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Align text to the center */
+    margin-bottom: 20px; /* Add margin to separate from courses */
+    border: 1px solid #ccc; /* Add a border */
+  }
+  
+  .course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .course-box {
+    width: calc(33.33% - 20px); /* 33.33% width for each box with some margin between them */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  /* Background colors for individual course boxes */
+  .course-box:nth-child(1) {
+    background-color: #C50000; /* Blue background for the first box */
+  }
+  
+  .course-box:nth-child(2) {
+    background-color: #018183; /* Green background for the second box */
+  }
+  
+  .course-box:nth-child(3) {
+    background-color: #FFDF00; /* Yellow background for the third box */
+  }
+  
+  .course-box:nth-child(4) {
+    background-color: #228B22; /* Red background for the fourth box */
+  }
+  
+  .course-box:nth-child(5) {
+    background-color: #000000; /* Purple background for the fifth box */
+  }
+  
+  .course-box:nth-child(6) {
+    background-color: #C50000; /* Teal background for the sixth box */
+  }
+  
