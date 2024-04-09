@@ -86,7 +86,6 @@ input[type="submit"]:hover {
     text-align: center;
   }
 
-<<<<<<< HEAD
   @media screen and (max-width: 620px) {
    
     .contact-details {
@@ -116,9 +115,7 @@ input[type="submit"]:hover {
       padding: 2%;
       width: 100%;
     }
-=======
   @media screen and (max-width: 600px) {
    
     
->>>>>>> f4f7d117524c3f34597a38f60ca44478f2338836
 }
