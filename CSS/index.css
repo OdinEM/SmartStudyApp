@@ -145,7 +145,30 @@ a{
     .navbar.open{
         right: 2%;
     }
+/* about responsive */
 
+    .about_txt{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .about_txt .what{
+        margin-top: 10px;
+    }
+
+    .tiles{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .separator{
+        display: none;
+    }
+    .about_img{
+        display: none;
+    }
 }
 /* Hero section */
 .hero{
@@ -240,7 +263,7 @@ a{
 }
 
 .about_txt{
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     flex-direction: column;
     gap: 30px;
