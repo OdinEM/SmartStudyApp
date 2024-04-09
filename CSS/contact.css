@@ -39,7 +39,8 @@ footer a:hover{
 .item {
  display: flex;
  margin: 5%;
- justify-content: space-;
+ justify-content: ce;
+ align-items: center;
 }
 
 .form-box {
