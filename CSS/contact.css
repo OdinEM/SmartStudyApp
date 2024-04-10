@@ -27,7 +27,7 @@ footer a:hover{
   margin-top: 6%;
   width: 50%;
   padding: 3%;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .left-side img{
@@ -83,6 +83,7 @@ input[type="submit"]:hover {
   color: red;}
 
   .copy {
+    font-size: 1rem;
     margin-top: 3%;
     text-align: center;
   }
