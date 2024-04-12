@@ -15,14 +15,15 @@ body{
 /* Header */
 
 header{
-    background-color: #3A80D4;
+    position: relative;
+    /* background-color: #3A80D4;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
     padding: 1rem;
     padding-left: 4rem;
-    padding-right: 4rem;
+    padding-right: 4rem; */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -31,10 +32,28 @@ header{
     justify-content: center;
 }
 
+.logo img{
+    width: 90px;
+}
+
 /* Menu */
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 90%;
+    background-color: #3A80D4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem;
+    /* padding-left: 4rem; */
+    /* padding-right: 4rem; */
     display: flex;
 }
+
 
 nav a{
     margin-left: 30px;
@@ -74,21 +93,86 @@ a{
 }
 
 .signup{
-    padding: 5px 25px;
+    padding: 5px 20px;
     background-color: white;
     color: #3A80D4;
     border-radius: 1rem;
     font-size: 18px;
     transition: 0.3s ease;
+   align-items: center;
 }
 
 .signup:hover{
     background-color: #F0F41D;
+    color: #3A80D4;
 }
 
+#menu-icon{
+    font-size: 29px;
+    color: white;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+@media (max-width:880px){
+    #menu-icon{
+        display: block;
+        margin-left: 15px;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 38vh;
+        background-color: #3A80D4;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+
+    .navbar.open{
+        right: 2%;
+    }
+/* about responsive */
+
+    .about_txt{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .about_txt .what{
+        margin-top: 10px;
+    }
+
+    .tiles{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .separator{
+        display: none;
+    }
+    .about_img{
+        display: none;
+    }
+}
 /* Hero section */
 .hero{
-    background: url(/images/kidooo.jpeg);
+    background: url(/SmartStudyApp/images/background-img.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -169,7 +253,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 80px;
 }
 .about_cont{
     display: flex;
@@ -179,7 +263,7 @@ a{
 }
 
 .about_txt{
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     flex-direction: column;
     gap: 30px;
