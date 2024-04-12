@@ -40,3 +40,19 @@ function showErrorMessage(message) {
   }).showToast();
 }
 
+const form = document.getElementById('reg-form');
+const message = document.getElementById('message');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const formData = new FormData(form);
+  const response = await fetch('/register', {
+    method: 'POST',
+    body: JSON.stringify(Object.fromEntries(formData)),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+  const data = await response.json();
+  message.textContent = data.message;
+});
