@@ -12,7 +12,19 @@ body {
     margin-bottom: 20px;
     border-bottom: 3px solid #ddd; /* A subtle border for visual separation */
   }
-  
+  .back-button-container button {
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #0052B4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back-button-container button:hover {
+    background-color: #003884;
+}
+
   .grades-container {
     padding: 20px;
     display: flex;

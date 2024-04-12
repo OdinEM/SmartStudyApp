@@ -47,4 +47,15 @@
   .grade-section ul li a:hover {
     background-color: #DDD; /* Darkens the link background slightly on hover for interactive feedback */
   }
-  
+  .back-button-container button {
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #0052B4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.back-button-container button:hover {
+    background-color: #003884;
+}
