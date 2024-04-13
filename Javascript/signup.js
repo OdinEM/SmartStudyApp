@@ -4,11 +4,11 @@ document.getElementById('reg-form').addEventListener('submit', async(e)=>{
   const lastName = document.getElementById('lastName').value;
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
-  const year = document.getElementById('Dropdown').value;
+  // const year = document.getElementById('Dropdown').value;
   const confirmPassword = document.getElementById('cpassword').value;
 
   
-  if(!firstName || !lastName || !email || !password || !year || !confirmPassword){
+  if(!firstName || !lastName || !email || !password  || !confirmPassword){
     showErrorMessage('Please enter all credentials');
   }
   if(password.length < 8){
@@ -40,19 +40,36 @@ function showErrorMessage(message) {
   }).showToast();
 }
 
-const form = document.getElementById('reg-form');
-const message = document.getElementById('message');
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const formData = new FormData(form);
-  const response = await fetch('/register', {
-    method: 'POST',
-    body: JSON.stringify(Object.fromEntries(formData)),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  });
-  const data = await response.json();
-  message.textContent = data.message;
+// Sending data in database
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('DOM fully loaded');
+  const registrationForm = document.getElementById('reg-form');
+  console.log(registrationForm);
+  if (registrationForm) {
+      registrationForm.addEventListener('submit', function(event) {
+          event.preventDefault();
+          const formData = {
+              firstName: document.getElementById('firstName').value,
+              lastName: document.getElementById('lastName').value,
+              email: document.getElementById('email').value,
+              password: document.getElementById('password').value,
+              cpassword: document.getElementById('cpassword').value,
+
+          };
+          fetch('http://127.0.0.1:7000/register', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(formData)
+          })
+          .then(response => response.json())
+          .then(data => {
+              document.getElementById('registrationMessage').textContent = data.message;
+          });
+      });
+  } else {
+      console.log('registrationForm not found');
+  }
 });
