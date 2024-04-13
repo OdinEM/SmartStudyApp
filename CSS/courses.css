@@ -1,53 +1,76 @@
+/* Importing the Jost font family from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap');
+
 body {
     background-color: #F0F7FF; /* Set background color for the entire page */
     color: #fff; /* Set text color to white */
-  }
-  
-  .course-heading {
+}
+
+.course-heading {
     background-color: #0052B4; /* Background color for the heading */
     padding: 20px; /* Add padding for spacing */
     text-align: center; /* Align text to the center */
     margin-bottom: 20px; /* Add margin to separate from courses */
     border: 1px solid #ccc; /* Add a border */
-  }
-  
-  .course-container {
+    border-radius: 15px; /* Rounded corners for the heading */
+}
+
+.course-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
-  }
-  
-  .course-box {
-    width: calc(33.33% - 20px); /* 33.33% width for each box with some margin between them */
+}
+
+.course-box {
+    width: 250px; /* Set width as per your specifications */
+    height: 142px; /* Set height as per your specifications */
     border: 1px solid #ccc;
-    padding: 20px;
     margin: 10px;
     text-align: center;
-  }
-  
-  /* Background colors for individual course boxes */
-  .course-box:nth-child(1) {
-    background-color: #C50000; /* Blue background for the first box */
-  }
-  
-  .course-box:nth-child(2) {
-    background-color: #018183; /* Green background for the second box */
-  }
-  
-  .course-box:nth-child(3) {
-    background-color: #FFDF00; /* Yellow background for the third box */
-  }
-  
-  .course-box:nth-child(4) {
-    background-color: #228B22; /* Red background for the fourth box */
-  }
-  
-  .course-box:nth-child(5) {
-    background-color: #000000; /* Purple background for the fifth box */
-  }
-  
-  .course-box:nth-child(6) {
-    background-color: #C50000; /* Teal background for the sixth box */
-  }
-  
+    position: relative; /* Necessary for positioning elements inside */
+    overflow: hidden; /* Ensures no overflow of child elements outside the border */
+    background-color: #F0F7FF; /* Matches the background color of the page */
+}
+
+/* Adding a pseudo-element for the colored top part */
+.course-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* The top half will be colored */
+    background-color: inherit; /* Inherits the nth-child background color */
+    z-index: 0; /* Ensures it stays in the background */
+}
+
+.course-box h2,
+.course-box .level-grade {
+    position: relative; /* Ensure text appears above the background layers */
+    z-index: 1;
+    color: #fff; /* Dark color for text visibility */
+}
+
+.course-box h2 {
+    font-size: 18px; /* Reduced font size for better fit */
+    font-weight: 700;
+    margin-top: 5px; /* Reduced space above the subject name */
+    padding: 0 5px; /* Adds padding to handle overflow text */
+}
+
+.course-box .level-grade {
+    font-size: 12px; /* Reduced font size for grade level */
+    font-weight: 300;
+    position: absolute;
+    right: 5px; /* Positioned to the right */
+    bottom: 5px; /* Positioned at the bottom */
+}
+
+/* Specific background colors for individual course boxes, upper half will match these */
+.course-box:nth-child(1) { background-color: #C50000; }
+.course-box:nth-child(2) { background-color: #018183; }
+.course-box:nth-child(3) { background-color: #FFDF00; }
+.course-box:nth-child(4) { background-color: #228B22; }
+.course-box:nth-child(5) { background-color: #000000; }
+.course-box:nth-child(6) { background-color: #C50000; }
