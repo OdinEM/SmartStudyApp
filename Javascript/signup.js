@@ -67,7 +67,10 @@ document.addEventListener('DOMContentLoaded', function() {
           .then(response => response.json())
           .then(data => {
               document.getElementById('registrationMessage').textContent = data.message;
-          });
+              if (data.redirect_url) {
+                window.location.href = data.redirect_url;
+            }
+            });
       });
   } else {
       console.log('registrationForm not found');

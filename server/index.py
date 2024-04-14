@@ -40,7 +40,7 @@ def register():
         new_user = User(firstName=firstName,lastName=lastName, email=email, password=password, cpassword=cpassword)
         db.session.add(new_user)
         db.session.commit()
-        return jsonify({'message': 'User registered successfully',  'redirect_url': '/login.html'})
+        return jsonify({'message': 'User registered successfully',  'redirect_url': './login.html'})
     except exc.IntegrityError:
         db.session.rollback()
         return jsonify({'message': 'firstName already exists'})
@@ -52,7 +52,7 @@ def login():
     password = data.get('password')
     user = User.query.filter_by(firstName=firstName, password=password).first()
     if user:
-        return jsonify({'message': 'Login successful'})
+        return jsonify({'message': 'Login successful','redirect_url': './dashboard.html'})
     else:
         return jsonify({'message': 'Invalid credentials'})
 
