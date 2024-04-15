@@ -23,13 +23,12 @@
         <div id="toast-container" class="toast-container"></div>
         <h1 id="top" style="display: none;">Registration Form</h1>
           <form id="reg-form">
-           
               <label>FirstName</label>
               <input type="text" name="firstName" id="firstName">
               <label>LastName</label>
               <input type="text" name="lastName" id="lastName">
               <label>Select your year level</label>
-              <select id="Dropdown">
+              <!-- <select id="Dropdown">
                 <option disabled selected>Select current level year</option>
                 <option>Primary one</option>
                 <option>Primary two</option>
@@ -38,7 +37,7 @@
                 <option>Primary five</option>
                 <option>Primary six</option>
                 <option>Other</option>
-              </select>
+              </select> -->
               <label>Email</label>
               <input type="email" id="email">
               <label>Password</label>
@@ -54,11 +53,13 @@
               <label class="checkbox-label">
               <input type="checkbox" value="terms">I agree terms&condition
               </label>
-              
+
               <input type="submit" value="Register">
               <p class="log">Already have an account?<a href="./login.html"><span>Login</span></a></p>
   
           </form>
+          <p id="registrationMessage"></p>
+
       </div>
     </div>
   </section>
