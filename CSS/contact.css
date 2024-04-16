@@ -1,6 +1,4 @@
-body {
-  margin: 0;
-}
+
 
 footer {
   background-color: #0052B4;
@@ -29,17 +27,20 @@ footer a:hover{
   margin-top: 6%;
   width: 50%;
   padding: 3%;
+  font-size: 1rem;
 }
 
 .left-side img{
-  margin: 2%;
+  margin: 0 2% 0 2%;
   width: 8%;
   height: auto;
 }
 
 .item {
  display: flex;
- justify-content: ;
+ margin: 5%;
+ justify-content: ce;
+ align-items: center;
 }
 
 .form-box {
@@ -81,6 +82,41 @@ input[type="submit"]:hover {
 .required {
   color: red;}
 
+  .copy {
+    font-size: 1rem;
+    margin-top: 3%;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 620px) {
+   
+    .contact-details {
+      display: block;
+    }
+    
+    .left-side{
+      text-align: center;
+      margin-top: 6%;
+      width: 100%;
+      padding: 3%;
+    }
+    
+    .left-side img{
+      margin: 2%;
+      width: 8%;
+      height: auto;
+    }
+    
+    .item {
+     display: flex;
+     justify-content: ;
+    }
+    
+    .form-box {
+       background-color: white;
+      padding: 2%;
+      width: 100%;
+    }
   @media screen and (max-width: 600px) {
    
     

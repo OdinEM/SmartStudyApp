@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
   background-color: #f2f2f2;
   background-image: url('/images/background.jpg');
   background-repeat: no-repeat;
@@ -34,18 +34,22 @@ body {
 }
 
 #side-image {
-  flex: 0 0 35%; 
+  /* flex: 0 0 35%;  */
   background-color: #0052B4; 
   color: #fff;
   padding: 20px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .word {
   text-align: center; 
   line-height: 1.5;
-  padding-top: 30%;
+  padding-top: 20%;
   font-size: 1.5rem;
   font-weight: bold;
 }
