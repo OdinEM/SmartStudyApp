@@ -1,0 +1,124 @@
+* {
+    width: fit-content;
+    height: fit-content;
+}
+
+.yellow {
+    position: relative;
+    left: -80px;
+    top: 30px;
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+h1 {
+    position: relative;
+    left: 750px;
+}
+
+.one {
+    background-color: rgba(44, 159, 246, 0.992);
+    width: 1000px;
+    height: 170px;
+    position: relative;
+    left: 300px;
+    top: -100px;
+}
+
+.one h2 {
+    position: relative;
+    color: white;
+    left: 50px;
+    top: 20px;
+}
+
+.one img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 900px;
+}
+
+.one p {
+    position: relative;
+    color: white;
+    left: 50px;
+    top: 20px;
+}
+
+.two {
+    background-color: rgba(44, 159, 246, 0.992);
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    left: 300px;
+    top: -100px;
+}
+
+.two h2 {
+    position: relative;
+    color: white;
+    left: 50px;
+    top: 30px;
+}
+
+.three {
+    background-color: rgba(44, 159, 246, 0.992);
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    left: 300px;
+    top: -100px;
+}
+
+.three h2 {
+    position: relative;
+    color: white;
+    left: 50px;
+    top: 30px;
+}
+
+.four {
+    background-color: rgba(44, 159, 246, 0.992);
+    width: 1000px;
+    height: 150px;
+    position: relative;
+    left: 300px;
+    top: -100px;
+}
+
+.four h2 {
+    position: relative;
+    color: white;
+    left: 50px;
+    top: 30px;
+}
+
+.five {
+    background-color: rgba(44, 159, 246, 0.992);
+    width: 1000px;
+    height: 150px;
+    position: relative;
+    left: 300px;
+    top: -100px;
+}
+
+.five h2 {
+    position: relative;
+    color: white;
+    left: 50px;
+    top: 30px;
+}
+
+.blue {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: navy;
+    border-radius: 50%;
+    left: 20px;
+    
+}
+    
