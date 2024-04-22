@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sidebar Menu</title>
+    <title>Smart Study</title>
     <link rel="stylesheet" href="../CSS/dashboard.css" />
     <link
       rel="stylesheet"
@@ -82,10 +82,83 @@
         <i class="fa-solid fa-xmark" id="toggle-cross"></i>
 
         <div id="students">
-          <p>staffroom page test side nav bar</p>
+          <p>SmartStudy message</p>
         </div>
+      <div id="messages-table">
+        
+        </div>
+        <div id="no-message" style="display: none; text-align: center;">No message sent....</div>
+
       </div>
     </div>
+    
+        <script>
+    
+          document.addEventListener("DOMContentLoaded", async() => {
+          const messagesTable = document.getElementById("messages-table");
+          const noMessage = document.querySelector('#no-message');
+          console.log(noMessage);
+      
+          try {
+            response = await fetch('http://localhost:5000/messages',{
+              method: 'GET',
+              
+            });
+            if(!response.ok){
+              throw new Error(`failed to fetch ${response.status}`);
+      
+            }
+            const responseData = await response.json();
+            console.log(responseData);
+            if(responseData.length === 0){
+              throw new Error(`no message yet`);
+            }
+            if(responseData.allMessages.length ===0){
+              noMessage.style.display = "block";
+            } else{
+              noMessage.style.display = "none";
+            const allMessages = responseData.allMessages
+            allMessages.forEach(messageObj=>{
+              let html = `
+                  <div id="all-messages">
+                  <div><span style="font-weight:bold">FullName:</span> ${messageObj.name}</div>
+                  <div><span style="font-weight:bold">Email:</span> ${messageObj.email}</div>
+                  <div><span style="font-weight:bold">Subject:</span> ${messageObj.subject}</div>
+                  <div><span style="font-weight:bold">Message:</span> ${messageObj.message}</div>
+                  <div>
+                      
+                    <button id="delete" style="background-color:red;color:white;padding:6px;margin-left:25px;" onclick="deleteMessage('${messageObj._id}')">Delete</button>
+                  <div>
+                  </div>
+              `;
+            
+              messagesTable.innerHTML += html;
+            })}
+          } catch (error) {
+              console.error('Error fetching or processing users:', error);
+              if (response) {
+                  console.error('Response status:', response.status);
+              }
+          }
+        })
+        const deleteMessage = async(id)=>{
+          try{
+
+            const response = await fetch(`http://localhost:5000/messages/${id}`,{
+              method: 'DELETE',
+              headers: {'Content-Types': "application/json"}
+            })
+            if(!response.ok){
+              return ('failed to delete this message')
+            }
+            location.reload();
+          }
+          catch(error){
+              console.log(error);
+          }
+        }
+         
+    </script>      
 
     <script src="../Javascript/dashboard.js"></script>
   </body>

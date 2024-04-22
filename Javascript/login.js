@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 firstName: document.getElementById('username').value,
                 password: document.getElementById('password').value,
             };
-            fetch('http://127.0.0.1:7000/login', {
+            fetch('http://localhost:5000/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

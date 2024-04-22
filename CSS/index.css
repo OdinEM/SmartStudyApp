@@ -172,6 +172,7 @@ a{
 }
 /* Hero section */
 .hero{
+
     background: url(/images/background-img.jpeg);
     background-repeat: no-repeat;
     background-size: cover;

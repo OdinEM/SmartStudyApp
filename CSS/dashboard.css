@@ -372,4 +372,22 @@ img {
       flex: 1 1 100%; /* Each box takes full width */
       margin-bottom: 10px; /* Add some space between boxes */
   }
+  
 }
+
+
+
+#all-messages{
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-left: 3%;
+  font-size: 14px;
+  word-wrap: break-word;
+  background-color: #5d85fa;
+  /* align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row; */
+}
+
+

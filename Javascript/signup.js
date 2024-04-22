@@ -17,7 +17,13 @@ document.getElementById('reg-form').addEventListener('submit', async(e)=>{
   if(password !== confirmPassword){
     showErrorMessage('Password and confirm password should match');
   }
-})
+  
+ 
+}
+)
+
+
+
 // Function to show success message
 function showSuccessMessage(message) {
   Toastify({
@@ -57,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
               cpassword: document.getElementById('cpassword').value,
 
           };
-          fetch('http://127.0.0.1:7000/register', {
+          fetch('http://localhost:5000/register', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json',
