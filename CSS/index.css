@@ -172,11 +172,8 @@ a{
 }
 /* Hero section */
 .hero{
-<<<<<<< HEAD
-    background: url(/SmartStudyApp/images/background-img.jpeg);
-=======
-    background: url(../images/background-img.jpeg);
->>>>>>> 82b569a4792c827af6ca5ee16cdae7d35a1ee06e
+
+    background: url(/images/background-img.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
